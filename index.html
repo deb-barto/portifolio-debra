@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Débora Bartosiaki</title>
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+          <div class="content">
+            <div class="img-wrapper">
+              <div class="debora"></div>
+          </div>
+        </div>
+        </div>
+        <div class="right">
+          <div class="text">
+            <h1>Débora Bartosiaki</h1>
+            <h3>Dev Front-End</h3>
+            <p>Olá, prazer em te receber aqui!</p>
+
+            <p> Eu sou formada em produção multimídia e trabalhei como designer por alguns anos. Hoje quero muito ser dev e venho me dedicando pra isso com bastante treino a aulas. </p>
+            <p>Sou estudante de matemática na UFGRS, apaixonada por conhecimento, sempre curiosa e buscando novas perguntas que possuem dificeis respostas.</p>
+        </div>
+        </div>
+    </div>
+  <div class="wrapper">
+
+    <!-- SLIDER
+    =============================== -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="slide-number">
+            <p><span>001</span></p>
+          </div>
+          <div class="slide-text">
+            <h4>
+              <span>
+                <a href="https://clever-saha-6f5726.netlify.app/" target="_blank">Landing Page Dream Maker</a>
+              </span>
+            </h4>
+          </div>
+          <div class="slide-img"></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide-number">
+            <p><span>002</span></p>
+          </div>
+          <div class="slide-text">
+            <h4>
+              <span>
+                <a href="https://mimir-e-commerce.vercel.app/" target="_blank">E-commerce Mimir</a>
+              </span>
+            </h4>
+          </div>
+          <div class="slide-img"></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide-number">
+            <p><span>003</span></p>
+          </div>
+          <div class="slide-text">
+            <h4>
+              <span>
+                <a href="https://gifted-mcnulty-cc0887.netlify.app/" target="_blank">Let's Drum'</a>
+              </span>
+            </h4>
+          </div>
+          <div class="slide-img"></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide-number">
+            <p><span>004</span></p>
+          </div>
+          <div class="slide-text">
+            <h4>
+              <span>
+                <a href="https://fervent-wozniak-392feb.netlify.app/" target="_blank">Draw With Me</a>
+              </span>
+            </h4>
+          </div>
+          <div class="slide-img"></div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide-number">
+            <p><span>005</span></p>
+          </div>
+          <div class="slide-text">
+            <h4>
+              <span>
+                <a href="https://elastic-spence-9012c4.netlify.app" target="_blank">Show do Milhão Quizz</a>
+              </span>
+            </h4>
+          </div>
+          <div class="slide-img"></div>
+        </div>
+
+      </div>
+    </div>
+</div>  
+
+    <div class="footer-dis" style="display:flex; justify-content:center; align-items: center;background: #ffc65d;">
+        <a href="https://github.com/hana-bananaa" target="_blank"> <img src="./img/icons/github-logo-face.png" alt="git"style="width:24px;  margin:10px;"></a>
+        <a href="https://www.linkedin.com/in/debora-barto/" target="_blank" > <img src="./img/icons/instagram.png" alt="linkedin" style="width:24px;  margin:10px;"></a> 
+        <a href="https://www.instagram.com/debra_barto/" target="_blank" > <img src="./img/icons/linkedin.png" alt="insta"style="width:24px; margin:10px;"></a>
+    </div>
+
+    <script>
+
+        TweenMax.to('.left', 2, {
+          delay: .8,
+          width: '50%',
+          ease: Power2.easeInOut
+        })
+    
+        TweenMax.to('.right', 2, {
+          delay: .6,
+          width: '50%',
+          ease: Power3.easeInOut
+        })
+    
+        TweenMax.from('.nav', 2, {
+          delay: .8,
+          opacity: 0,
+          ease: Expo.easeInOut
+        })
+    
+        TweenMax.from('.text h1', 2, {
+          delay: .6,
+          x: 1000,
+          ease: Circ.easeInOut
+        })
+    
+        TweenMax.from('.text p', 2, {
+          delay: .8,
+          x: 1000,
+          ease: Circ.easeInOut
+        })
+        
+        TweenMax.from('.text h3', 2, {
+          delay: .7,
+          x: 1000,
+          ease: Circ.easeInOut
+        })
+        TweenMax.to('.debora', 2, {
+          delay: 1.5,
+          width: '800px',
+          ease: Power2.easeInOut
+        })
+    
+        TweenMax.staggerFrom('.bottomnav p', 2, {
+          delay: 1,
+          x: 1000,
+          ease: Circ.easeInOut
+        }, 0.08)
+    
+        TweenMax.from('.info', 2, {
+          delay: 1.5,
+          y: 100,
+          ease: Circ.easeInOut
+        })
+    
+        TweenMax.from('.name', 2, {
+          delay: 1.5,
+          x: -600,
+          ease: Circ.easeInOut
+        })
+    
+      </script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <!-- swiper js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <!-- custom js -->
+  <script src="main.js"></script>
+</body>
+
+</html>
