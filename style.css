@@ -17,8 +17,9 @@
     list-style: none;
   }
 .container{
+    margin-top:50px;
     width: 500px;
-    height: 800px;
+    height: 650px;
 }
 .wrapper{
     display:flex;
